@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
+  <script src="jq/jquery-3.5.1.js"></script>
   <head>
     <title>409570303_Lab3</title>
    </head>
   
- <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
- <script>
-   <$(document).ready(function(){
-  $("button").click(function(){
-    $("button").slidedown(3000);
-  });
+  <script>
+  $(document).ready(function(){
+    $("btn").click(function(){
+        $("#h1").css("color", "red");
+    });
 });
   </script>
   
     <body background='https://img.lovepik.com/background/20211022/large/lovepik-light-gilding-background-image_500967107.jpg'>
-       <h1 style= "top:50px; left:450px; position:absolute;">這是409570303的Lab4作業</h1>
+       <h1 style= "top:50px; left:450px; position:absolute;" id="h1">這是409570303的Lab4作業</h1>
        <h2 style= "top:150px; left:550px; position:absolute;">幫忙打個分數吧</h2>
       
       <img src="https://i.ibb.co/PjyQH5M/335546.jpg" alt="讚" width="95" height="160" style="top:230px; left:630px; position:absolute;" />
@@ -38,7 +38,7 @@
     <b1 style>60分</b1>
    </label>
    
-   <button>送出</button>
+   <div class= btn>送出</div>
  </form>
     </html>
 
