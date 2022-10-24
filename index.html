@@ -33,16 +33,22 @@
   
 
  <div>
-    <input class="btn btn-primary" style="top:200px"; left:400px; position:absolute; type="button" value="送出">
+    <input class="btn btn-primary" type="button" value="送出">
 </div>
   <script>
     $(document).ready(function () {
         $(".btn").click(function () {
             $(location).attr("href","test1.html")
         })
-        
     })
 </script>
+  .btn btn-primary{
+  position:absolute;
+  top:200px;
+  left:400px;
+  width:100px;
+  height:100px;
+  }
   
     </html>
 
