@@ -3,11 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
- 
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
  <!-- css樣式表 -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
  
-    <title></title>
   </head>
   <body>
     <div class="container">
@@ -43,6 +42,9 @@
                 <div class="card-body">
                   <h4 class="card-title text-center mb-0">滷肉飯</h4>
                   <h4 class="card-body text-center mb-0">35元</h4>
+                      <input type="text" value="01" class="inputNum" disabled />
+                       <button class="jq-addNum">+1</button>
+                        <button class="jq-minusnum">-1</button>
                 </div>
               </div>  
               <div class="card">
@@ -124,6 +126,22 @@
       </div>
     </div>
  
+    
+//加總 1
+$(".jq-addNum").click(function () {
+  plus();
+});
+
+function plus() {
+  let inputNum = $(".inputNum").val();
+  $(".inputNum").val(++inputNum);
+  console.log(typeof (inputNum)); // number
+}
+
+//歸零
+$(".jq-format").click(function () {
+  $(".inputNum").val(0);
+});
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
